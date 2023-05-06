@@ -10,6 +10,11 @@
     height: calc(100% - 73px);
 }
 
+.text-start {
+    width: 100%;
+    text-align: start;
+}
+
 @media (max-width: 450px) {
     .h-custom {
         height: 100%;
