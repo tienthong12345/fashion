@@ -1,18 +1,18 @@
 import './Home.scss'
 import React from 'react';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { BsSearch } from 'react-icons/bs';
 
 export default function Home() {
-    // const history = useNavigate();
+    const history = useNavigate();
 
-    // const handleClick = () => {
-    //     history('/header')
-    // }
+    const handleClick = () => {
+        history('/login')
+    }
 
     return (
         <div className='wrapper'>
-            <div className='navbar'>
+            <div className='navb'>
                 <div className='nav-header'>
                     <div className='logo'>
                         <img
@@ -26,7 +26,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-
+            <button onClick={handleClick}></button>
         </div>
     )
 }
